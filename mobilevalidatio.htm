@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>DHTML</title>
+<script language="javascript">
+function Valid()
+{
+p=f1.t1.value
+v=0
+if(p.length==10)
+{
+v=1
+for(i=0;i<10;i++)
+{
+if(p.charCodeAt(i)<48||p.charCodeAt(i)>57)
+{
+v=0
+break
+}}}
+if(v==1)
+{
+alert("valid mobile no.")
+}
+else
+alert("invalid mobile no.")
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Mobile
+<input name="t1" type="text" placeholder="mobileno." maxlength="10">
+<br><br>
+<input type="button" value="check validity" onclick="Valid()">
+</form>
+</body>
+</html>
